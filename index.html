@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UniTable</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+<div id="whole-wrapper">
+    <div id="tableElementClass-wrapper">
+        <h2>TYPE</h2>
+        <div id="tableElementBtns-wrapper"></div>
+        <div id="tblInfoInput-wrapper">
+            ROW <input id="tbl-row" type="text">
+            COLUMN <input id="tbl-col" type="text">
+            <input id="tbl-ok" type="button" value="CREATE" onclick="CreateTable()">
+        </div>
+    </div>
+    <div id="tableElementPreview-wrapper">
+        <h2>ELEMENTS</h2>
+        <div id="tableElementDisplay-wrapper"></div>
+    </div>
+    <div id="talbeCreate-wrapper">
+        <h2 id="h2-TableGrid">Table Grid</h2>
+        <div id="createElement-wrapper">
+            <div id="CreateArea-wrapper">
+                <input class="btn-opt" id="btn-preview" type="button" value="PREVIEW" onclick="Preview()">
+                <div id="talbeElementCreate-wrapper"></div>
+            </div>
+            <div id="resPreview-wrapper">
+                <input class="btn-opt" id="btn-copy" type="button" value="COPY" onclick="Copy()">
+                <span id="resPreview"></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
